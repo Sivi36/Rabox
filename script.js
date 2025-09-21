@@ -1345,66 +1345,6 @@ Trunc = function(){
       
       this.mesh.add(fruit);
     }
-
-    Pine = function() {
-    this.mesh = new THREE.Group();
-
-    // Trunk
-    var trunkGeom = new THREE.CylinderGeometry(2, 2, 15, 6);
-    var trunk = new THREE.Mesh(trunkGeom, brownMat);
-    trunk.position.y = 7.5;
-    trunk.castShadow = true;
-    this.mesh.add(trunk);
-
-    // Leaves / Cones
-    var coneGeom = new THREE.ConeGeometry(6, 20, 6);
-    var cone = new THREE.Mesh(coneGeom, greenMat);
-    cone.position.y = 25;
-    cone.castShadow = true;
-    this.mesh.add(cone);
-};
-
-
-    Bushy = function() {
-    this.mesh = new THREE.Group();
-
-    var trunkGeom = new THREE.CylinderGeometry(1.5, 1.5, 10, 6);
-    var trunk = new THREE.Mesh(trunkGeom, brownMat);
-    trunk.position.y = 5;
-    trunk.castShadow = true;
-    this.mesh.add(trunk);
-
-    var foliageGeom = new THREE.SphereGeometry(8, 6, 6);
-    var foliage = new THREE.Mesh(foliageGeom, greenMat);
-    foliage.position.y = 12;
-    foliage.castShadow = true;
-    this.mesh.add(foliage);
-
-    var foliage2 = foliage.clone();
-    foliage2.scale.set(0.8, 0.8, 0.8);
-    foliage2.position.y = 18;
-    this.mesh.add(foliage2);
-};
-
-
-    Oak = function() {
-    this.mesh = new THREE.Group();
-
-    // Trunk
-    var trunkGeom = new THREE.CylinderGeometry(2, 3, 20, 6);
-    var trunk = new THREE.Mesh(trunkGeom, brownMat);
-    trunk.position.y = 10;
-    trunk.castShadow = true;
-    this.mesh.add(trunk);
-
-    // Foliage
-    var foliageGeom = new THREE.SphereGeometry(10, 8, 8);
-    var foliage = new THREE.Mesh(foliageGeom, greenMat);
-    foliage.position.y = 25;
-    foliage.castShadow = true;
-    this.mesh.add(foliage);
-};
-
     
     // BRANCHES
     
